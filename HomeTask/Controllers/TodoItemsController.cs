@@ -101,7 +101,7 @@ namespace HomeTask.Controllers
             return todoItem;
         }
 
-        private bool TodoItemExists(long id)
+        private bool TodoItemExists(int id)
         {
             return _context.TodoItems.Any(e => e.Id == id);
         }
